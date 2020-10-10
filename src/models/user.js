@@ -85,7 +85,7 @@ userSchema.methods.generateAuthToken = async function () {
 	return token
 }
 
-//checking credentials
+//checking credential
 userSchema.statics.findByCredentials = async (email, password) => {
 	const user = await User.findOne({ email })
 
